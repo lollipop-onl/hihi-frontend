@@ -5,7 +5,11 @@
   "repository": "https://github.com/simochee/hihi-frontend.git",
   "author": "Ryoya Tamura <simochee@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "parcel watch -p 43000 ./app/index.html"
+  },
   "devDependencies": {
-    "parcel": "^0.0.1"
+    "poststylus": "^1.0.0",
+    "stylus": "^0.54.5"
   }
 }
