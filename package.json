@@ -1,0 +1,11 @@
+{
+  "name": "hihi-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/simochee/hihi-frontend.git",
+  "author": "Ryoya Tamura <simochee@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^0.0.1"
+  }
+}
