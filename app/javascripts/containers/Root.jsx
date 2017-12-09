@@ -1,21 +1,20 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+
+import Router from '../components/Router';
 
 class Root extends Component {
     render() {
       return (
-        <h1>Hello!</h1>
+        <Router
+          store={this.props.store}
+        />
       );
     }
 }
 
 Root.propTypes = {
+  store: PropTypes.any.isRequired
 };
 
-function mapStateToProps(state) {
-  return {
-  };
-}
-
-export default connect(mapStateToProps, {
-})(Root);
+export default Root;
