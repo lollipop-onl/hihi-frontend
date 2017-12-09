@@ -47,7 +47,9 @@ class HelpFigure extends Component {
         }}
         ref={ elem => this.svg = elem }
       >
+        {/* For PC */}
         <polygon
+          className="only-pc"
           points={`
             ${x(0)} ${y(72)}
             ${x(16)} ${y(78)}
@@ -63,6 +65,7 @@ class HelpFigure extends Component {
           fill="rgba(255, 255, 255, .1)"
         />
         <polygon
+          className="only-pc"
           points={`
             ${x(0)} ${y(61)}
             ${x(21)} ${y(45)}
@@ -71,6 +74,36 @@ class HelpFigure extends Component {
             ${x(70)} ${y(65)}
             ${x(90)} ${y(23)}
             ${x(100)} ${y(43)}
+            ${x(100)} ${y(100)}
+            ${x(0)} ${y(100)}
+          `}
+          stroke="none"
+          fill="rgba(255, 255, 255, .1)"
+        />
+        {/* For SP */}
+        <polygon
+          className="only-sp"
+          points={`
+            ${x(0)} ${y(72)}
+            ${x(18)} ${y(78)}
+            ${x(38)} ${y(62)}
+            ${x(72)} ${y(86)}
+            ${x(100)} ${y(61)}
+            ${x(100)} ${y(100)}
+            ${x(0)} ${y(100)}
+          `}
+          stroke="none"
+          fill="rgba(255, 255, 255, .1)"
+        />
+        <polygon
+          className="only-sp"
+          points={`
+            ${x(0)} ${y(61)}
+            ${x(21)} ${y(45)}
+            ${x(33)} ${y(60)}
+            ${x(62)} ${y(42)}
+            ${x(84)} ${y(58)}
+            ${x(100)} ${y(51)}
             ${x(100)} ${y(100)}
             ${x(0)} ${y(100)}
           `}
