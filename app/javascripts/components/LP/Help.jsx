@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import HelpFigure from './HelpFigure';
+
 class Help extends Component {
   render () {
     return (
@@ -15,6 +17,7 @@ class Help extends Component {
           </div>
           <a href="#" className="help--button">プロジェクトに参加する</a>
         </div>
+        <HelpFigure />
       </div>
     );
   }
