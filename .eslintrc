@@ -4,8 +4,6 @@
     browser: true
     es6: true
     node: true
-  parserOptions:
-      sourceMaps: module
   plugins:
     - react
   extends:
