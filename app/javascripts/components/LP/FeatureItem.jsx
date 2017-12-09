@@ -11,7 +11,7 @@ class FeatureItem extends Component {
 
     return (
       <div className="feature-item">
-        <div className="feature-item--icon {icon}" />
+        <div className={`feature-item--icon ${icon}`} />
         <div className="feature-item--body">
           <div className="feature-item--heading">{title}</div>
           <div className="feature-item--content">{children}</div>
