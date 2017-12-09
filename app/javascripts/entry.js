@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 import reducer from './reducers';
+import Root from './containers/Root';
 
 const store = createStore(
   reducer,
@@ -14,7 +15,7 @@ const store = createStore(
 
 render(
   <Provider store={store}>
-    <h1>Hello World</h1>
+    <Root />
   </Provider>,
   document.getElementById('root')
 );
