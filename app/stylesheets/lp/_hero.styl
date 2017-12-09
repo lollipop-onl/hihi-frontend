@@ -1,0 +1,78 @@
+.hero
+  background-image linear-gradient(to left, lighten($_primary, 40%), $_primary)
+  height 560px
+  padding-bottom 80px
+  width 100%
+  &--wrapper
+    align-items center
+    display flex
+    height 560px
+  // .hero--content
+  &--content
+    align-items center
+    display flex
+    flex-direction column
+    h2
+      color #fff
+      font-size 20px
+      font-weight normal
+      letter-spacing .3em
+      +mobile()
+        font-size 3vw
+    h1
+      color #fff
+      font-size 42px
+      margin 16px 0 24px
+      +mobile()
+        font-size 5.5vw
+    p
+      color rgba(#fff, .8)
+      font-size 14px
+      line-height 1.7
+      width 60%
+      text-align center
+      +mobile()
+        width 85%
+        font-size 3vw
+  &--button-group
+    display flex
+    margin-top 50px
+    +mobile()
+      align-items center
+      flex-direction column
+      margin-top 30px
+  &--button
+    border 1px solid
+    border-radius 40px
+    display inline-block
+    font-size 16px
+    height 42px
+    line-height 42px
+    padding 0 40px
+    text-decoration none
+    transition all .12s ease
+    +mobile()
+      font-size 3vw
+    &:not(:first-child)
+      margin-left 32px
+      +mobile()
+        margin 24px 0 0
+    &__primary
+      @extend .hero--button
+      background $_accent
+      border-color $_accent
+      color #fff
+      &:hover
+        background rgba(#fff, .4)
+        color $_accent
+    &__outline
+      @extend .hero--button
+      background transparent
+      border-color #fff
+      color #fff
+      &:hover
+        background #fff
+        color $_primary
+  // .hero--visual
+  &--visual
+    width 35%

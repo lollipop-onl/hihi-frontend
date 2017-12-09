@@ -1,0 +1,43 @@
+body
+  background #eee
+  font-family: "Noto Sans Japanese"
+  font-weight 200
+
+.container
+  max-width 960px
+  margin 0 auto
+  +mobile()
+    width 90%
+  & > h2
+    color #111
+    font-size 32px
+    letter-spacing .2em
+    margin-top 100px
+    text-align center
+    +mobile()
+      font-size 6vw
+  & > h3
+    color #333
+    font-size 24px
+    line-height 1.6
+    margin-top 50px
+    text-align center
+    +mobile()
+      font-size 4vw
+      margin-top 30px
+  & > p
+    color #333
+    font-size 16px
+    line-height 1.8
+    margin-top 1.8em
+    text-align center
+    +mobile()
+      font-size 3.2vw
+      
+.only-pc
+  +mobile()
+    display none
+.only-sp
+  display none
+  +mobile()
+    display block

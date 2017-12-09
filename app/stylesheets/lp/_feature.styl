@@ -1,0 +1,48 @@
+.feature
+  &--wrapper
+    display flex
+    margin-top 80px
+  &--visual
+    width 320px
+  &--items
+    flex-grow 1
+    margin-left 10%
+    .feature-item
+      &:not(:first-child)
+        margin-top 50px
+      &--icon
+        border-radius 50%
+        box-shadow 0 0 6px 2px $_primary
+        color $_primary
+        float left
+        font-size 32px
+        height 64px
+        line-height 64px
+        text-align center
+        width 64px
+      &--body
+        margin-left 100px
+        overflow hidden
+      &--heading
+        color #111
+        font-size 20px
+        font-weight bold
+        line-height 1.5
+        margin-top 15px
+      &--content
+        margin-top 15px
+        p
+          color #555
+          font-size 14px
+          line-height 1.4
+          margin-top 5px
+  +mobile()
+    &--wrapper
+      display block
+    &--visual
+      display none
+    &--items
+      margin 0
+      .feature-item
+        &--body
+          margin-left 90px

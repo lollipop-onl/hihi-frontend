@@ -1,0 +1,41 @@
+.get-started
+  background lighten($_primary, 60%)
+  overflow hidden
+  padding-bottom 100px
+  .information
+    align-items center
+    display flex
+    flex-direction column
+    margin-top 60px
+    &--qr-code
+      background #fff
+      height 180px
+      width 180px
+      img
+        width 100%
+    &--brand-name
+      color #111
+      font-size 24px
+      font-weight bold
+      margin-top 40px
+    &--process
+      color #333333
+      counter-reset info
+      font-size 18px
+      line-height 1.8
+      list-style-type none
+      margin-top 25px
+      max-width 650px
+      padding-left 2em
+      +mobile()
+        font-size 4vw
+      li
+        margin-top .8em
+        text-indent -2em
+        &::before
+          content counter(info) "."
+          counter-increment info
+          letter-spacing .3em
+          margin-right .4em
+    &--friend
+      margin-top 40px

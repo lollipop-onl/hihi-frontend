@@ -1,0 +1,15 @@
+---
+  parser: babel-eslint
+  env:
+    browser: true
+    es6: true
+    node: true
+  parserOptions:
+      sourceMaps: module
+  plugins:
+    - react
+  extends:
+    - eslint:recommended
+    - plugin:react/recommended
+  rules:
+    no-console: 1 # console.**の使用を警告
