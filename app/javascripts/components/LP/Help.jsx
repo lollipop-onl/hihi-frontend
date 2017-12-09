@@ -4,7 +4,7 @@ class Help extends Component {
   render () {
     return (
       <div className="help">
-        <div className="conteiner">
+        <div className="container">
           <div className="help--heading">
             <div className="heading--icon ion-ios-heart" />
             <h2>このボットはAIではありません</h2>
