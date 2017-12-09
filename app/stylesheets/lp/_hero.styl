@@ -8,40 +8,61 @@
     height 640px
   // .hero--content
   &--content
-    width 65%
+    align-items center
+    display flex
+    flex-direction column
     h2
       color #fff
-      font-size 18px
+      font-size 20px
       font-weight normal
       letter-spacing .3em
+      +mobile()
+        font-size 3vw
     h1
       color #fff
-      font-size 32px
+      font-size 42px
+      margin 16px 0 24px
+      +mobile()
+        font-size 5.5vw
     p
-      color #fff
-      font-size 12px
+      color rgba(#fff, .8)
+      font-size 14px
       line-height 1.7
-  &--button-gruop
+      width 60%
+      text-align center
+      +mobile()
+        width 85%
+        font-size 3vw
+  &--button-group
     display flex
+    margin-top 50px
+    +mobile()
+      align-items center
+      flex-direction column
+      margin-top 30px
   &--button
     border 1px solid
-    border-radius 16px
+    border-radius 40px
     display inline-block
-    font-size 12px
-    height 32px
-    line-height 32px
-    padding 0 20px
+    font-size 16px
+    height 42px
+    line-height 42px
+    padding 0 40px
     text-decoration none
     transition all .12s ease
+    +mobile()
+      font-size 3vw
     &:not(:first-child)
-      margin-left 20px
+      margin-left 32px
+      +mobile()
+        margin 24px 0 0
     &__primary
       @extend .hero--button
       background $_accent
       border-color $_accent
       color #fff
       &:hover
-        background transparent
+        background rgba(#fff, .4)
         color $_accent
     &__outline
       @extend .hero--button
@@ -54,10 +75,3 @@
   // .hero--visual
   &--visual
     width 35%
-
-  // モバイル向け
-  +mobile()
-    &--content
-      width 100%
-    &--visual
-      display none
