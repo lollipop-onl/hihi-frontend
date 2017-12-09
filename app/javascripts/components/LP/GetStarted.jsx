@@ -5,7 +5,7 @@ class GetStarted extends Component {
     return (
       <div className="get-started">
         <div className="container">
-          <h2>サービスを</h2>
+          <h2>サービスを使う</h2>
           <h3>このサービスは無料でどなたでもご利用いただけます</h3>
           <p>ログ収集や回収日をご案内するために送信されたデータは、発信したユーザーの情報とは切り離されて保存されます</p>
           <div className="information">
