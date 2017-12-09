@@ -27,7 +27,10 @@
       margin-top 25px
       max-width 650px
       padding-left 2em
+      +mobile()
+        font-size 4vw
       li
+        margin-top .8em
         text-indent -2em
         &::before
           content counter(info) "."
