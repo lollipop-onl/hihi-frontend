@@ -8,7 +8,7 @@ class Feature extends Component {
       <div className="container">
         <h2>機能のご紹介</h2>
         <div className="feature--wrapper">
-          <div className="feature--details">
+          <div className="feature--items">
             <FeatureItem
               title="見出し"
               icon="ion-loop"
