@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Router, Route, Switch } from 'react-router';
-import { syncHistoryWithStore } from 'react-router-redux';
-import { createBrowserHistory } from 'history';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import LP from '../containers/LP';
@@ -14,13 +12,11 @@ import Login from './Admin/Login';
 class AppRouter extends Component {
   constructor(props) {
     super(props);
-
-    this.history = syncHistoryWithStore(createBrowserHistory(), props.store);
   }
 
   render () {
     return (
-      <Router history={this.history}>
+      <BrowserRouter>
         <Switch>
           <Route exact path="/" component={LP} />
           <Route path="/dashboard/login" component={Login} />
@@ -32,7 +28,7 @@ class AppRouter extends Component {
             </Switch>
           </Auth>
         </Switch>
-      </Router>
+      </BrowserRouter>
     );
   }
 }
