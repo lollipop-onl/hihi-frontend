@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import { Router, Route } from 'react-router';
+import { Router, Route, Switch } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { createBrowserHistory } from 'history';
 import PropTypes from 'prop-types';
 
 import LP from '../containers/LP';
+import Auth from './Admin/Auth';
+import Login from './Admin/Login';
 
 /**
  * ルーティングを定義するクラス
@@ -19,7 +21,17 @@ class AppRouter extends Component {
   render () {
     return (
       <Router history={this.history}>
-        <Route path="/" component={LP} />
+        <Switch>
+          <Route exact path="/" component={LP} />
+          <Route path="/dashboard/login" component={Login} />
+          <Auth>
+            <Switch>
+              <Route path="/dashboard/home">
+                <h1>Home!</h1>
+              </Route>
+            </Switch>
+          </Auth>
+        </Switch>
       </Router>
     );
   }
