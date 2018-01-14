@@ -1,9 +1,11 @@
 import { combineReducers } from 'redux';
 
-import main from './main';
+import auth from './auth';
+import dashboard from './dashboard';
 
 const reducer = combineReducers({
-  main
+  auth,
+  dashboard
 });
 
 export default reducer;

@@ -1,7 +1,9 @@
 {
   "presets": [
     "env",
-    "react"
+    "es2015",
+    "stage-0",
+    "react-app"
   ],
   "plugins": [
     "transform-inline-environment-variables"

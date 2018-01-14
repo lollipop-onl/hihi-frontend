@@ -1,0 +1,53 @@
+.table
+  background #fff
+  min-width 100%
+  th, td
+    padding .6em .8em
+  &--wrapper
+    border 1px solid  #e9e9e9
+    margin 0 4%
+    overflow-x scroll
+  &--header
+    background #e9e9e9
+    th
+      color #555
+      font-weight 400
+      font-size 12px
+      text-align left
+      white-space nowrap
+      &:not(:first-child)
+        border-left 1px solid  #fff
+  &--body
+    tr
+      &:not(:first-child)
+        td
+          border-top 1px solid  #e9e9e9
+      td
+        background #fff
+        color #252521
+        font-size 12px
+        transition background .2s ease
+        white-space nowrap
+        &:not(:first-child)
+          border-left 1px solid  #e9e9e9
+      &:hover
+        td
+          background #f8f8f8
+      &.row--error
+        td
+          background #EF959D
+          border-color darken(#EF959D, 8%)
+  &--empty
+    .empty
+      &--content
+        align-items center
+        color #888
+        display flex
+        flex-direction column
+        justify-content center
+        padding 62px 0
+      &--icon
+        font-size 42px
+      &--message
+        font-size 14px
+        margin-top 24px
