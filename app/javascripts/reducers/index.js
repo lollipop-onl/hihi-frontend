@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
-import { routerReducer as routing } from 'react-router-redux';
 
-import main from './main';
+import auth from './auth';
+import dashboard from './dashboard';
 
 const reducer = combineReducers({
-  main,
-  routing
+  auth,
+  dashboard
 });
 
 export default reducer;

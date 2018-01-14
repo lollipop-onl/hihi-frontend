@@ -45,6 +45,13 @@
       color $_accent
     &:active
       opacity 0.7
+    &__disabled
+      opacity .8
+      &:hover
+        background none
+        color #fff
+      &:active
+        opacity .8
   +mobile()
     &--heading
       flex-direction column

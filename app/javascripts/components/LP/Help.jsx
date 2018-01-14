@@ -15,7 +15,8 @@ class Help extends Component {
             <p>このボットはコンピューターではなく市民の手によって進化していきます</p>
             <p>このプロジェクトに加わってボットを育ててみませんか？</p>
           </div>
-          <a href="#" className="help--button">プロジェクトに参加する</a>
+          {/* <a href="#" className="help--button">プロジェクトに参加する</a> */}
+          <span className="help--button help--button__disabled">Coming Soon ...</span>
         </div>
         <HelpFigure />
       </div>

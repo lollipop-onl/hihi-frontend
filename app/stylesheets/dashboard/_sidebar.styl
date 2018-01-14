@@ -1,0 +1,107 @@
+.sidebar
+  background #262D39
+  width 240px
+  &--profile
+    display grid
+    grid-template "avatar   name" \
+                  "avatar   logout" \
+                  / auto     1fr
+    padding 20px 15px
+    .profile
+      &--avatar
+        background #ccc
+        border-radius 4px
+        grid-area avatar
+        height 52px
+        overflow hidden
+        width 52px
+        img
+          width 100%
+      &--name
+        color rgba(#fff, .6)
+        grid-area name
+        font-size 14px
+        margin 10px 0 0 10px
+        overflow hidden
+        text-overflow ellipsis
+        white-space nowrap
+      &--logout
+        .logout--button
+          background-image linear-gradient(#2F3742, #272E37)
+          border 1px solid #1F252F
+          border-radius 4px
+          color #575E6B
+          cursor pointer
+          grid-area logout
+          font-size 12px
+          margin 12px auto 0
+          padding 6px 0
+          text-align center
+          transition all .2s ease
+          width 120px
+          &:hover
+            box-shadow 0 0 3px rgba(#000, .4)
+            color lighten(#575E6B, 40%)
+  &--nav
+    .nav
+      &--item
+        align-items center
+        border-bottom 1px solid rgba(#fff, .1)
+        box-sizing border-box
+        color rgba(#fff, .4)
+        display flex
+        padding 20px 18px
+        position relative
+        text-decoration none
+        transition color .12s ease
+        width 100%
+        &::before
+          background #5AAEA8
+          bottom -1px
+          content ''
+          display block
+          left 0
+          opacity 0
+          position absolute
+          top -1px
+          transition opacity .12s ease
+          width 3px
+        &::after
+          color rgba(#fff, .1)
+          content "\f3d1"
+          font-family Ionicons
+          position absolute
+          right 16px
+          top 50%
+          transform translate(0, -50%)
+          transition color .12s ease
+        &:first-child
+          border-top 1px solid rgba(#fff, .1)
+        &:not(.nav--item__active):hover
+          color rgba(#fff, .8)
+          &::after
+            color rgba(#fff, .8)
+        &__active
+          color rgba(#fff, .8)
+          &::before
+            opacity 1
+          &::after
+            color #5AAEA8
+      &--icon
+        height 24px
+        font-size 24px
+        text-align center
+        width 24px
+      &--title
+        font-size 14px
+        margin-left 12px
+  &--login
+    align-items center
+    display flex
+    flex-direction column
+    height 100%
+    justify-content center
+    p
+      color rgba(#fff, .6)
+      font-size 12px
+      letter-spacing .2em

@@ -1,0 +1,52 @@
+.file-input
+  align-items center
+  display flex
+  max-width calc(100% - 140px)
+  padding 8px 0
+  position relative
+  &--input
+    bottom 0
+    cursor pointer
+    left 0
+    opacity 0
+    position absolute
+    top 0
+    width 100%
+  &--icon
+    color #5aaea8
+    font-size 28px
+  &--file-name
+    color #555
+    font-size 14px
+    margin-left .8em
+    overflow hidden
+    text-overflow ellipsis
+    white-space nowrap
+  &--submit
+    background #5aaea8
+    border none
+    border-radius 20px
+    color #fff
+    cursor pointer
+    font-size 14px
+    height 42px
+    letter-spacing .8em
+    margin-left auto
+    outline none
+    text-align center
+    text-indent .8em
+    transition all .12s ease
+    width 120px
+    &:hover
+      background darken(#5aaea8, 20%)
+    &:active
+      background darken(#5aaea8, 40%)
+      transform scale3d(.95, .95, .95)
+    &[disabled]
+      background #ddd
+      cursor default
+  &--loader
+    transform scale(.5)
+  &--wrapper
+    @extends .wrapper
+    display flex
