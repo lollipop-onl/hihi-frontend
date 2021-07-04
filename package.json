@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel ./app/index.html -p 43003",
-    "build": "parcel build ./app/index.html --no-minify",
+    "build": "parcel build ./app/index.html --no-minify --out-dir dist --public-url /",
     "server": "PORT=43001 pm2 start server.js"
   },
   "devDependencies": {
