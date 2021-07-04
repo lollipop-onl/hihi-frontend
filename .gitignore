@@ -2,7 +2,7 @@
 
 # Build Files
 dist/
-.*/
+.cache
 
 # Logs
 logs
